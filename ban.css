@@ -57,6 +57,11 @@ span#Ptext_time{
     margin-left: 6.8vw;
 }
 
+.reclamation{
+    cursor: pointer;
+}
+
 .easteregg{
     cursor: default;
 }
+
