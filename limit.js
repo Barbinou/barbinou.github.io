@@ -17,8 +17,9 @@ function sleep(ms) {
 
 let pop_text_time= document.getElementById("Ptext_time");
 let attribut_DataVal = parseInt(pop_text_time.getAttribute("data-val"));
-const time = findGetParameter("time");
-attribut_DataVal = time;
+const time = (findGetParameter("time"));
+const time_int = parseInt(time.split("\\.")[0]);
+attribut_DataVal = time_int;
 
 async function compteur () {
     for (let i = attribut_DataVal ; i > 0 ; i--){
