@@ -2,39 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bébou ? 🥺</title>
+    <title>Unilim.gay</title>
+    <link href="limit.css" rel="stylesheet">
 </head>
 <body>
-
-<center>
-    <h1 id="oui"></h1>
-    <img src="https://media.tenor.com/76qUVr5A-JYAAAAC/aaa.gif">
-</center>
-
-<script>
-    //Bip boup, ca serait cool d'arreter de spam, réessaye dans
-    const time = findGetParameter("time");
-    console.log(time);
-
-    if (time == null || time === "null")
-        document.getElementById("oui").innerHTML = "Bip boup, ca serait cool d'arreter de spam, réessaye plus tard";
-    else
-        document.getElementById("oui").innerHTML = "Bip boup, ca serait cool d'arreter de spam, réessaye dans " + time + " secodes.";
-
-
-    function findGetParameter(parameterName) {
-        var result = null,
-            tmp = [];
-        location.search
-            .substr(1)
-            .split("&")
-            .forEach(function (item) {
-                tmp = item.split("=");
-                if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
-            });
-        return result;
-    }
-</script>
-
+    <div id="pop_up_timeout">  <!-- responsive chez moi --> <!-- pour test faire dans la barre de lien "barbinou.github.io/limit?time=(tempstimeout)"--> <!-- JS est un connard il peut y avoir 1000.23 et le pastINT ne marche pas -->
+        <span class="Ptext_descriptif"> Timeout pendant </span>
+        <span id="Ptext_time" data-val="1800"> 0000 s </span> <!-- 30 min max -->
+        <a href="https://www.youtube.com/watch?v=rgpu1Ms3EFw"><img src="https://media2.giphy.com/media/Nw8z2olm0nGHC/giphy.gif?cid=790b7611b8baf1496f024d38c7627c25e5b61c16f26f407f&rid=giphy.gif&ct=g" class="kermit"></a>
+    </div>
 </body>
+    <script type="text/javascript" src="limit.js"></script>
 </html>
