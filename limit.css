@@ -16,7 +16,7 @@ body {
     background-size: cover;
 }
 
-.pop_up{
+#pop_up_timeout{
     width: 60vmin;
     height: 38vmin;
     border: 1px solid whitesmoke;
