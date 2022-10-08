@@ -38,13 +38,13 @@ span.Ptext_descriptif{
     display: grid;
     place-items: center;
     font-weight: 600;
-    font-size: 1.8em;
+    font-size: 2.5em;
     text-align: center;
 }
 
 span#Ptext_time{
     color: white;
-    font-size: 1.2em;
+    font-size: 2em;
     text-align: center;
     padding: 0.7em 0;
     font-weight: 400;
@@ -52,16 +52,37 @@ span#Ptext_time{
 }
 
 .kermit{
-    width: 20vw;
+    width: 23vw;
     height: 20vh;
-    margin-left: 6.8vw;
 }
 
 .reclamation{
     cursor: pointer;
+    color: white;
+    width: 4em;
+}
+
+.reclamation:hover{
+    background-color: #ECF0F1;
+    border-radius: 4vh;
+    color: #8E44AD;
 }
 
 .easteregg{
     cursor: default;
+    text-align: center;
+    padding: 0.7em 0;
 }
 
+
+@media screen and (max-width: 1352px) {
+
+    span.Ptext_descriptif{
+        font-size: 1.8em;
+    }
+
+    span#Ptext_time{
+        font-size: 1.2em;
+    }
+    
+}
