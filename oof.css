@@ -13,6 +13,7 @@ body {
     font-family: "Kanit",Verdana, serif ;
     background-position: top;
     background-size: cover;
+
 }
 
 #pop_up_timeout{
@@ -59,11 +60,12 @@ span#Ptext_time{
     cursor: pointer;
     color: white;
     width: 2em;
+    padding: 0.6vh;
 }
 
 .reclamation:hover{
     background-color: white;
-    border-radius: 4vh;
+    border-radius: 2vh;
     color: #8E44AD;
 }
 
@@ -104,7 +106,23 @@ span#Ptext_time{
     100%{background-position:0% 54%}
 }
 
-@media screen and (max-width: 1352px) {
+@media screen and (max-width: 2000px) {
+
+    span.Ptext_descriptif{
+        font-size: 2em;
+    }
+
+    span#Ptext_time{
+        font-size: 1.5em;
+    }
+
+    #pop_up_timeout{
+        margin-left: 33vw;
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
 
     span.Ptext_descriptif{
         font-size: 1.8em;
@@ -116,19 +134,7 @@ span#Ptext_time{
 
 }
 
-@media screen and (max-width: 2000px) {
-
-    span.Ptext_descriptif{
-        font-size: 2em;
-    }
-
-    span#Ptext_time{
-        font-size: 1.5em;
-    }
-
-}
-
-@media screen and (max-width: 500px) {  /*mobile */
+@media screen and (max-width: 500px) {  /*mobile not throttling */
 
     span.Ptext_descriptif{
         font-size: 0.8em;
@@ -148,7 +154,7 @@ span#Ptext_time{
     }
 }
 
-@media screen and (max-height: 500px) {  /*mobile */
+@media screen and (max-height: 500px) {  /*mobile throttling */
 
     span.Ptext_descriptif{
         font-size: 0.8em;
