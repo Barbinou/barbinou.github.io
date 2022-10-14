@@ -148,4 +148,25 @@ span#Ptext_time{
     }
 }
 
+@media screen and (max-height: 500px) {  /*mobile */
+
+    span.Ptext_descriptif{
+        font-size: 0.8em;
+    }
+
+    span#Ptext_time{
+        font-size: 0.6em;
+    }
+
+    .kermit{
+        width: 22vw;
+        height: 20vh;
+    }
+
+    #pop_up_timeout{
+        margin-left: 33vw;
+    }
+}
+
+
 
