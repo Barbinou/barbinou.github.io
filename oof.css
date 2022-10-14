@@ -60,6 +60,7 @@ span#Ptext_time{
     color: white;
     width: 2em;
     padding: 0.6vh;
+    object-position: center;
 }
 
 .reclamation:hover{
@@ -82,6 +83,10 @@ span#Ptext_time{
     -moz-animation: background_anime 19s ease infinite;
     -o-animation: background_anime 19s ease infinite;
     animation: background_anime 19s ease infinite;
+}
+
+i{
+    width: 1.5vw;
 }
 
 @-webkit-keyframes background_anime {
