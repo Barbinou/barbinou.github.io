@@ -11,7 +11,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Kanit",Verdana, serif ;
-    background-image: url("accueil.jpg");
     background-position: top;
     background-size: cover;
 }
@@ -30,7 +29,7 @@ body {
     border-bottom: 10px solid whitesmoke;
     background-color: rgba(255, 182, 193, 0.9);
     margin-top: 25vh;
-    left: 33.5vw;
+    margin-left: 32vw;
 }
 
 span.Ptext_descriptif{
@@ -74,6 +73,36 @@ span#Ptext_time{
     padding: 0.7em 0;
 }
 
+.background {
+    background: linear-gradient(47deg,lightpink, pink, hotpink, deeppink);
+    background-size: 800% 800%;
+
+    -webkit-animation: background_anime 19s ease infinite;
+    -moz-animation: background_anime 19s ease infinite;
+    -o-animation: background_anime 19s ease infinite;
+    animation: background_anime 19s ease infinite;
+}
+
+@-webkit-keyframes background_anime {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@-moz-keyframes background_anime {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@-o-keyframes background_anime {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@keyframes background_anime {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
 
 @media screen and (max-width: 1352px) {
 
@@ -98,3 +127,25 @@ span#Ptext_time{
     }
 
 }
+
+@media screen and (max-width: 500px) {  /*mobile */
+
+    span.Ptext_descriptif{
+        font-size: 0.8em;
+    }
+
+    span#Ptext_time{
+        font-size: 0.6em;
+    }
+
+    .kermit{
+        width: 40vw;
+        height: 10vh;
+    }
+
+    #pop_up_timeout{
+        margin-left: 20vw;
+    }
+}
+
+
