@@ -30,7 +30,6 @@ body {
     border-bottom: 10px solid whitesmoke;
     background-color: rgba(255, 182, 193, 0.9);
     margin-top: 25vh;
-    margin-left: 32vw;
 }
 
 span.Ptext_descriptif{
@@ -116,10 +115,6 @@ span#Ptext_time{
         font-size: 1.5em;
     }
 
-    #pop_up_timeout{
-        margin-left: 33vw;
-    }
-
 }
 
 @media screen and (max-width: 1400px) {
@@ -149,9 +144,6 @@ span#Ptext_time{
         height: 10vh;
     }
 
-    #pop_up_timeout{
-        margin-left: 20vw;
-    }
 }
 
 @media screen and (max-height: 500px) {  /*mobile throttling */
@@ -169,9 +161,6 @@ span#Ptext_time{
         height: 20vh;
     }
 
-    #pop_up_timeout{
-        margin-left: 33vw;
-    }
 }
 
 
